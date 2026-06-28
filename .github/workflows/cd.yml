@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 26 
 
+      - name: Install ts 
+        run: npm install typescript
+        
       - name: Install dependencies
         run: npm run build
         
