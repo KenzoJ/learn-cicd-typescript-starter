@@ -1,10 +1,10 @@
-FROM --platform=linux/arm64 node:26
+FROM node:22
 
 WORKDIR /usr/src/app
 
 ADD . .
 
-RUN npm ci
+RUN npm ci --force
 
 RUN npm run build
 
